@@ -1,88 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>chocochip_main</title>
     <style>
-        @import url(ctr_layout.css);
-        @import url(TMONBlack.ttf);
-        body{height: 1500px;}
-        #mainlogo{margin: 0 auto;
-        overflow: hidden;  
-        text-align: center; 
-    }
-        #ck{width: 80px;}
-        #mainlogo span{text-shadow: 3px 3px 4px blueviolet;
-            font-family: "TMONBlack";
-            font-weight: 600;
-            font-size: 700%;
-        }
-        #scrt{width: 3px; position: absolute; left: 12.1%;; top:3.5%;}
-        hr{width: 0; border-style: none;}
-        #menubar{overflow: hidden;
-        width: 960;
+      @import url(ctr_layout.css);
+
+      body {
+        height: 1500px;
+      }
+      #mainlogo {
+        margin: 0 auto;
+        overflow: hidden;
+        text-align: center;
+        
+      }
+      #ck {
+        width: 80px;
+        position: absolute;
+        left: 9%;top: 3.7%;
+      }
+      #mainlogo span {
+        text-shadow: 3px 3px 4px blueviolet;
+        position: absolute;
+        font-weight: 600;
+        font-size: 700%;
+        left: 17%;top: 1%;
+      }
+      #scrt {
+        width: 3px;
+        position: absolute;
+        left: 13%;
+        top: 4.5%;
+      }
+      hr {
+        width: 0;
+        border-style: none;
+      }
+      #menubar {
+        overflow: hidden;
+        width: 960px;
         background-color: blueviolet;
         height: 30px;
         border-radius: 15px;
-        }
-        #menubar span{float:left;}
-        a{text-decoration: none;
-        margin-left:15px;margin-right: 15px ;
-    color: black;
-margin-top: 3px;}
-    #menubar a:hover{background-color: rgb(118, 50, 226);
+        position: absolute;
+        top: 13%;
+        z-index: 10;
+      }
+      #menubar a {
+        text-decoration: none;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: #c7d3d4;
+        margin-top: 3px;
+      }
+      #menubar a:hover {
+        background-color: rgb(118, 50, 226);
         color: cornsilk;
-    border-radius: 10px;
-    }
-    #ref{position: absolute;bottom: 10px;}
-    #mart{background-image: url("computer.png");
+        border-radius: 10px;
+      }
+      #ref {
+        position: absolute;
+        bottom: 10px;
+      }
+      #mart {
+        background-image: url("computer.png");
         background-size: 100%;
         background-repeat: no-repeat;
         opacity: 40%;
-    height: 1000px;
-    }
-    #main{position: absolute;
-        color: black;
-        font-size: xx-large;
-        margin : 30px 20px;
-        top:20%;
-    }
+        height: 1450px;
+        background-attachment: fixed;
+        /*position: absolute;
+        left:0;top: 0;*/
+        z-index: -30;
+      }
+      #main {
+        position: absolute;
+        color: #c7d3d4;
         
+        margin: 30px 20px;
+        top: 20%;
+        overflow: hidden;
+            }
+    #gif{ width: 900px;float: left;
+    }
+    #readme{background-color: rgb(138, 106, 214);
+        border-radius: 10px;float: left;font-size: xx-large;}
     </style>
-</head>
-<body>
-    
-    <div id="mainlogo"><img id="ck" src="chocolate-chip.png">
-        <a href="parkboyoung.jpg"><img id="scrt" src="schip.png" alt="it was deleted"></a>
-        <span>Hello-World!</span></div>
+  </head>
+  <body>
+    <div id="mainlogo">
+      <img id="ck" src="chocolate-chip.png" />
+      <a href="parkboyoung.jpg"
+        ><img id="scrt" src="schip.png" alt="it was deleted"
+      /></a>
+      <span>Hello-World!</span>
+    </div>
 
-    <hr/>
+    <br />
     <div id="menubar">
-        <a href="course.html" > Course </a>
-        <a href="profile.html"> Profile </a>
-        <a href="project.html"> Project </a>
+      <a href="course.html"> Course </a>
+      <a href="profile.html"> Profile </a>
+      <a href="project.html"> Project </a>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div id="mart"></div>
+    
+    <p id="main">
+      <img id="gif" src="KakaoTalk_20210518_195704272.gif" alt="deleted">
+      <br/><br/>
+      <span id="readme">
+      It's my first time to make my own web site.<br /><br />
+      this site is just made to test my understanding in the blockchain
+      education course<br /><br /><br />
+      Thank you for visiting my site and I hope you enjoy it.
+      </span>
+    </p>
 
+    <br /><br /><br />
+    <div id="ref">
+      Icons made by
+      <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </div>
-    <hr><hr/><hr/><hr/>
-    <div id="mart">
-        
-    </div>
-    <p id="main">It's my first time to make my own web site.<br/><br/>
-        this site is just made to test my understanding in
-        the blockchain education course<br/><br/><br/>
-    Thank you for visiting my site and I hope you enjoy it.</p>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <br/><br/><br/>
-    <div id="ref">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-</body>
+  </body>
 </html>
