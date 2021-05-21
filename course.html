@@ -1,46 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>chocochip_course</title>
     <style>
-        @import url(ctr_layout.css);
-        @font-face {
-            font-family: 'tmon';
-            src: url(TMONBlack.ttf);
-        }
-        #head img{width: 50px;}
-        #head span{font-family: 'tmon',sans-serif,serif;
+      @import url(ctr_layout.css);
+      @font-face {
+        font-family: "tmon";
+        src: url(TMONBlack.ttf);
+      }
+      #head{text-align: center;}
+      #head img {
+        width: 50px;
+      }
+      #head span {
+        font-family: "tmon", sans-serif, serif;
         font-size: xx-large;
-        }
-        body{background-image: ;}
-        #cen{float: left;}
-        hr{border-color: blueviolet;
+      }
+      body {
+        background-image: ;
+      }
+      #cen {
+        float: left;
+        overflow: hidden;
+        background:linear-gradient(to bottom,
+        rgb(255, 255, 255),rgb(154, 85, 219)); 
+        width: 940px;
+      }
+      hr {
+        border-color: blueviolet;
         background-color: blueviolet;
         width: auto;
-        border-style: 10px solid;
-        }
+        border-style: 15px solid;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        
+      }
+      #nav { 
+          width: 15%;
+          float: left;
+          
+      }
+      #nav h5{margin-left: 20px;
+      color: rgb(14, 105, 241);
+      }
+      #nav a{text-decoration: none;}
+      #articles{
+          width: 84%;
+          float: left;
+          border-left: 2px solid blueviolet;
+      }
+      #rapa{width: 100%;}
     </style>
-</head>
-<body>
-    <div id=head>
-        <img src="chocolate-chip.png" alt="chocochip_img">
-        <span>블록체인 개발자 양성과정</span><br/>
-        <span>blockchain engineer education course</span>
-
+  </head>
+  <body>
+    <div id="head">
+      <img src="chocolate-chip.png" alt="chocochip_img" />
+      <span>블록체인 개발자 양성과정</span><br />
+      <span>blockchain engineer education course</span>
     </div>
-    <hr/>
-    <div id=cen>
-        <a href="https://www.atic.ac/frt/frt0066/fedView.do?eduCourseSeq=882&subDivn=E&returnUrl=%2Ffrt%2Ffrt0066%2FfedView.do&urlDivn">
-        <img id="rapa" src="blockchain_an.PNG" alt="RAPA 전파정보통신교육원">
+    <hr />
+    <div id="cen">
+      <div id="nav">
+            <a href="index.html"><h5> HomePage</h5></a><br/>
+            <a href="profile.html"><h5> Profile</h5></a><br/>
+            <a href="project.html"><h5> Project</h5></a><br/>
+      </div>
+      <div id="articles">
+        <a
+          href="https://www.atic.ac/frt/frt0066/fedView.do?eduCourseSeq=882&subDivn=E&returnUrl=%2Ffrt%2Ffrt0066%2FfedView.do&urlDivn"
+        >
+          <img
+            id="rapa"
+            width="768px"
+            src="blockchain_an.PNG"
+            alt="RAPA 전파정보통신교육원"
+            title="클릭하시면 RAPA 전파정보통신교육원 페이지로 이동합니다."
+          />
         </a>
+        <table>
+            
+        </table>
         <a href="https://www.flywheel.co.kr/program">
-        <img id="fobl" src="fobl.PNG" alt="포블게이트 인재개발원">
+          <img id="fobl" src="fobl.PNG" alt="포블게이트 인재개발원" 
+          title="클릭하시면 포블게이트 인재개발원 페이지로 이동합니다."
+          />
         </a>
+      </div>
     </div>
-    
-    
-</body>
+  </body>
 </html>
