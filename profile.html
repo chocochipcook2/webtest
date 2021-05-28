@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #blind h3{margin-top: 30%;
+        color: rgb(255, 255, 255);}
+    </style>
+</head>
+<body>
+    <div id="blind" onclick=ss() style=" float:left; text-align: center; width: 960px;height: 3000px;background-color: black; opacity: 60%;;">
+       <h3> -BLIND- </h3>
+        
+       
+    </div>
+    <div id = "main" style="position:absolute;display: none;"> ???
+    </div>
+    
+</body>
+<script>
+    bl1=document.getElementById("blind");
+    main=document.getElementById("main")
+   function ss(){
+        
+        main.style.display="block";
+        bl1.style.display="none";
+    }
+    console.log(bl1);
+</script>
+</html>
